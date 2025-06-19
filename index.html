@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Step 6 – JS Interaction</title>
 </head>
 <body>
-   <h1>Hola mi nombre es ana</h1> 
-   <p>Bienvenido a Eter</p>
-    
+  <div id="toggleBox" style="width: 200px; height: 200px;  cursor: pointer;">
+    <img id="imgtoggleBox" src="https://i.pinimg.com/236x/8a/62/7a/8a627a101025a3dfedc1c54b4886e327.jpg" alt="" width="100%">
+  </div>
+
+  <script>
+    const box = document.getElementById("toggleBox");
+    const img = document.getElementById("imgtoggleBox");
+    const src1 = "https://i.pinimg.com/236x/8a/62/7a/8a627a101025a3dfedc1c54b4886e327.jpg";
+    const src2 = "https://http2.mlstatic.com/D_Q_NP_757743-MCO84572167261_052025-O.webp";
+    box.addEventListener("click", () => {
+      img.src = img.src === src1 ? src2 : src1;
+    });
+  </script>
 </body>
 </html>
