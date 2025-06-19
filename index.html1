@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+      border:2px solid rgb(136, 185, 248);
+      margin: 10px;
+      padding: 10px;
+    }
+    #miprimerdiv {
+      background-color: lightblue;
+    }
+        body{
+            color: rgba(123, 94, 189, 0.644);
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+        p {
+            text-align: center;
+            color: rgb(124, 216, 170);
+        }
+        img{width: 300px; 
+
+        }
+    </style>
+</head>
+<body>
+   <h1>Hola mi nombre es ana</h1> 
+   <p>Bienvenido a Eter</p>
+    <div id="miprimverdiv">un pato</div>
+    <div id="behappy">dos patos</div>
+    <div>
+    <img src="https://m.media-amazon.com/images/I/71t2VF3KIDL._UF350,350_QL80_.jpg" alt="pato1"    height="250">
+    </div>
+    
+</body>
+</html>
