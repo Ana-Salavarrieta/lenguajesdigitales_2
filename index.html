@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Step 7 – Rich Media</title>
+  <style>
+    .hero {
+      background: url('https://picsum.photos/800/300') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #myCanvas {
+      background-color: rgb(232, 42, 42);
+    }
+  </style>
 </head>
 <body>
-   <h1>Hola mi nombre es ana</h1> 
-   <p>Bienvenido a Eter</p>
-    
+  <div class="hero">
+    ¡Bienvenido a mi mundo digital!
+  </div>
+
+  <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(0, 100); // Comienza en el borde izquierdo, centro vertical
+    ctx.lineTo(200, 100); // Termina en el borde derecho, centro vertical
+    ctx.stroke();
+  </script>
+
+  <img src="koenigsegg-agera-rs-refinement-front.jpg" alt="Koenigsegg agera rs" width="300px" />
+
+  <audio controls width="250px">
+    <source src="https://31a21509-86c6-4132-acb3-621b5.mdnplay.dev/shared-assets/audio/tx-rx-roar.mp3">
+  </audio>
+
+  <video controls width="250px">
+    <source src="flower.webm" type="video/webm" />
+    <source src="https://31c2b1b9-80f9-4c1b-afc8-7d3dc7b147.mdnplay.dev/shared-assets/videos/flower.mp4" type="video/mp4" />
+  </video>
 </body>
 </html>
