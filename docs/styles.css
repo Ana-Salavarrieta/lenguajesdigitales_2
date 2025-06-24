@@ -1,0 +1,12 @@
+.imagen img {
+  width: 600px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.imagen {
+    border: 1px dashed rgb(165, 231, 206);
+    padding: 20px;
+    position: absolute;
+    display: none;
+}
