@@ -1,12 +1,70 @@
-.imagen img {
-  width: 600px;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.2s;
+body {
+    background: #ffffff;
+    color: #4C484A;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #627F4D;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+p {
+    font-family: 'Literata', serif;
+    color: #4C484A;
+}
+
+#animation-container {
+    background: #d3ab9e;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #42593C33;
+    padding: 24px 0;
+}
+
 .imagen {
-    border: 1px dashed rgb(165, 231, 206);
+    border: 2px solid #627F4D;
+    background: #CEAFA6;
+}
+
+.imagen img {
+    width: 600px;
+    height: auto;
+    opacity: 1;
+    transition: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.titulo {
+    text-shadow: 2px 2px 8px #8C6F65;
+}
+
+.imagen {
+    border: 1px dashed rgb(88, 209, 99);
     padding: 20px;
-    position: absolute;
+
     display: none;
+}
+
+h1.titulo {
+    font-family: 'Viaoda Libre', cursive;
+    text-align: center;
+    font-size: xx-large;
+}
+
+div#animation-container {
+    border: 1px solid red;;
+}
+
+p {
+    font-family: 'Literata', serif;
+}
+
+.parrafo-centrado {
+    text-align: center;
+
+}
+
+.parrafo-centrado p {
+    text-align: center;
+    max-width: 700px;
 }
